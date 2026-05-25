@@ -48,8 +48,8 @@ frontend/
 
 ## 🌐 Live URL
 
-Frontend: https://your-live-frontend-link  
-Backend API: https://your-backend-api-link  
+Frontend: (https://paytm-frontend-gamma.vercel.app/)
+Backend API: (https://paytm-backend-zkbw.onrender.com)  
 
 ---
 

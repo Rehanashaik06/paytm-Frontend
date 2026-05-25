@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand { font-family: 'Inter', sans-serif; display:inline-flex; align-items:baseline; gap:0; margin:0; }
+.logo-pay { color: #0b66b2; font-weight:900; font-size:24px; line-height:1; }
+.logo-tm { color: #7ed6ff; font-weight:700; font-size:20px; margin-left:0; line-height:1; }
+
+.nav-left .logo img { display:none; }
+
+.nav-center .nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-center .nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #222;
+}
+
+.nav-center .nav-links li .chev { color: rgba(11,35,64,0.6); font-size: 14px; margin-left: 6px; }
+
+.nav-center .nav-links li.has-dropdown { position: relative; }
+.nav-center .nav-links li .dropdown { display:none; position:absolute; top:calc(100% + 10px); left:0; background:#fff; padding:12px; box-shadow:0 6px 18px rgba(2,6,23,0.08); border-radius:10px; min-width:260px; }
+.nav-center .nav-links li .dropdown ul { list-style:none; }
+.nav-center .nav-links li .dropdown ul li { padding:8px 6px; }
+.nav-center .nav-links li .dropdown ul li a { color:#0b2340; font-size:15px; }
+.nav-center .nav-links li.has-dropdown:hover .dropdown { display:block; }
+
+.download-link { color: #0b66b2; display:flex; align-items:center; gap:8px; font-size:16px; }
+
+.signin-btn .avatar { width:28px; height:28px; border-radius:50%; background: linear-gradient(180deg,#1f6fb8,#133a6b); display:inline-block; margin-right:8px; }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon { font-size: 18px; }
+
+.download {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signin-btn {
+  background-color: #002970;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight:600;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-center { display: none; }
+  .nav-left .logo img { height: 24px; }
+}
+
+@media screen and (max-width: 480px) {
+  .download-link { display:none; }
+}
